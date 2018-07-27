@@ -14,6 +14,7 @@ for ($week = $week_number; $week <= $week_number + 5; $week++) {
     for ($day_week = 1; $day_week <= 7; $day_week++) {
         $month_from = date('m', strtotime($year.'W'.$week.$day_week));
         $day = date('d', strtotime($year.'W'.$week.$day_week));
+
         if ($month == $month_from) echo $day.' ';
         else echo '   ';
     }
